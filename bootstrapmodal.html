@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap modal</title>
+    <!-- load bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- load jquery and bootsrap js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h5>bootsrap modal</h5>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target=#largemodal>
+      large modal
+      </button>
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target=#mediummodal>
+      medium modal
+      </button>
+      <button type="button" class="btn btn-danger" data-toggle="modal" data-target=#smallmodal>
+      small modal
+      </button>
+    </div>
+
+    <!-- modal large -->
+    <div class="modal fade" id="largemodal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h4>large modal</h4>
+            <span class="close" data-dismiss="modal">&times;</span>
+          </div>
+          <div class="modal-body">
+            "Seseorang yang tepat tak selalu datang tepat waktu. Kadang ia
+            datang setelah kau lelah disakiti oleh seseorang yang tidak tahu
+            cara menghargaimu."
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-success">save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal medium -->
+    <div class="modal fade" id="mediummodal">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h4>medium modal</h4>
+            <span class="close" data-dismiss="modal">&times;</span>
+          </div>
+          <div class="modal-body">
+            "Pertama kau kenal orangnya, lalu kau kenal sahabatnya, lalu kau
+            kenal keluarganya, lalu kau menjadi bagian dari hidupnya, indah..."
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-info">save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal small -->
+    <div class="modal fade" id="smallmodal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h4>small modal</h4>
+            <span class="close" data-dismiss="modal">&times;</span>
+          </div>
+          <div class="modal-body">
+            "Jatuh hati tidak pernah bisa memilih, Tuhan yang memilihkan.
+            Kita hanyalah korban. Kecewa adaah konsekuensi, bahagia adalah bonus."
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-danger">save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
